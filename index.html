@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+  <title>Task Rejection Letter</title>
+</head>
+<body>
+  <h1>Task Rejection Letter</h1>
+  <p>Generate a helpful message saying that you won't dedicate precious minutes of your lifespan to a task requested of you.　Click the submit button to check the message, and then copy & send the URL to them!</p>
+  <br>
+
+  <input type="text" id="name" placeholder="your name" />
+  <br>
+  
+  <input type="number" id="age" placeholder="your age" />
+  <br>
+  
+  <input type="text" id="addressee" placeholder="your addressee's name" />
+  <br>
+  
+  <input type="text" id="myInput" list="data" placeholder="your country"/>
+  <datalist id="data"></datalist>
+  <br>
+  
+  <input type="text" id="task" placeholder="your task" />
+  <br>
+
+  <button onclick="sendInfo()">Preview</button>
+  <br><br>
+</body>
+<script src="data.js"></script>
+<script src="index.js"></script>
+</html>
