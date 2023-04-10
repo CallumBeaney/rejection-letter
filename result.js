@@ -17,7 +17,7 @@
 
   text += `<p>Dear ${addressee},</p>`;
   text += `<p>I am writing to apologize for my inability to complete the following task requested of me:</p><p>　　　${task}</p>`;
-  text += `<p>Being a citizen of ${country}, ${continent}, which has an average life expectancy of ${lifespan}, I only have a predicted ${remainingLifespan} years of life left to live.</p>`;
+  text += `<p>Being a citizen of ${country}, ${continent}, which has an average life expectancy of ${lifespan} years old, I only have a predicted ${remainingLifespan} years of life left to live.</p>`;
   text += `<p>As much as I would like to assist you, I must prioritize my limited time and resources to other endeavors that are most critical for me to accomplish before my passing. Please understand that this decision was not easy for me, but one that I had to make given my current circumstances.</p>`;
   text += `<p>I truly regret any inconvenience this may have caused and I hope that you can find an alternate solution to your needs. Thank you for considering me for the task and please accept my apologies for any disappointment or inconvenience caused.</p>`;
   text += `<p>Sincerely,</p>`;
