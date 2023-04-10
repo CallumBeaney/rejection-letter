@@ -47,7 +47,7 @@ function sendInfo() {
   }
 
   // Create the URL with parameters
-  const url = `https://callumbeaney.github.io/Rejection-Letter/result.html?n=${name}&a=${age}&p=${addressee}&c=${country}&t=${task}`;
+  const url = `https://callumbeaney.github.io/rejection-letter/result.html?n=${name}&a=${age}&p=${addressee}&c=${country}&t=${task}`;
 
   // const url = `file:///Users/---/---/rejection%20letter/result.html?n=${name}&a=${age}&p=${addressee}&c=${country}&t=${task}`;
 
