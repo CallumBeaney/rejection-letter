@@ -3,7 +3,7 @@ const regionData = {
       "region": "Africa",
       "age": 50.75
     },
-    "The Central African Republic": {
+    "Central African Republic": {
       "region": "Africa",
       "age": 53.1
     },
@@ -191,7 +191,7 @@ const regionData = {
       "region": "Africa",
       "age": 66.69
     },
-    "The United Republic of Tanzania": {
+    "United Republic of Tanzania": {
       "region": "Africa",
       "age": 67.34
     },
@@ -487,7 +487,7 @@ const regionData = {
       "region": "Americas",
       "age": 76.03
     },
-    "The United Arab Emirates": {
+    "United Arab Emirates": {
       "region": "Eastern Mediterranean",
       "age": 76.08
     },
@@ -571,7 +571,7 @@ const regionData = {
       "region": "Americas",
       "age": 78.45
     },
-    "The United States of America": {
+    "United States of America": {
       "region": "Americas",
       "age": 78.5
     },
@@ -631,11 +631,7 @@ const regionData = {
       "region": "Europe",
       "age": 81.32
     },
-    "The United Kingdom of Great Britain and Northern Ireland": {
-      "region": "Europe",
-      "age": 81.4
-    },
-    "England": {
+    "United Kingdom of Great Britain and Northern Ireland": {
       "region": "Europe",
       "age": 81.4
     },
