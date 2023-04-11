@@ -6,8 +6,10 @@
   const name = urlParams.get('n');
   const age = urlParams.get('a');
   const addressee = urlParams.get('p');
-  const country = urlParams.get('c');
+  let rawCountry = urlParams.get('c');
   const task = urlParams.get('t');
+
+  let country = capitaliseWords(rawCountry);
 
   const continent = regionData[country].region;
   const lifespan = regionData[country].age;
@@ -25,3 +27,9 @@
   
   document.getElementById("rejectionDiv").innerHTML += text;
 }();
+
+function capitaliseWords(str) {
+  const words = str.split(" ");
+  const capitalizedWords = words.map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase());
+  return capitalizedWords.join(" ");
+}

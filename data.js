@@ -51,7 +51,7 @@ const regionData = {
       "region": "Africa",
       "age": 62.25
     },
-    "Democratic Republic of the Congo": {
+    "Democratic Republic Of The Congo": {
       "region": "Africa",
       "age": 62.35
     },
@@ -83,7 +83,7 @@ const regionData = {
       "region": "Africa",
       "age": 62.92
     },
-    "Micronesia (Federated States of)": {
+    "Micronesia": {
       "region": "Western Pacific",
       "age": 63.03
     },
@@ -191,7 +191,7 @@ const regionData = {
       "region": "Africa",
       "age": 66.69
     },
-    "United Republic of Tanzania": {
+    "United Republic Of Tanzania": {
       "region": "Africa",
       "age": 67.34
     },
@@ -239,7 +239,7 @@ const regionData = {
       "region": "Europe",
       "age": 69.5
     },
-    "Timor-Leste": {
+    "Timor Leste": {
       "region": "South-East Asia",
       "age": 69.62
     },
@@ -251,7 +251,7 @@ const regionData = {
       "region": "Western Pacific",
       "age": 70.12
     },
-    "Sao Tome and Principe": {
+    "Sao Tome And Principe": {
       "region": "Africa",
       "age": 70.42
     },
@@ -295,7 +295,7 @@ const regionData = {
       "region": "Americas",
       "age": 72.02
     },
-    "Bolivia (Plurinational State of)": {
+    "Bolivia": {
       "region": "Americas",
       "age": 72.14
     },
@@ -307,7 +307,7 @@ const regionData = {
       "region": "Western Pacific",
       "age": 72.57
     },
-    "Democratic People's Republic of Korea": {
+    "Democratic People's Republic Of Korea": {
       "region": "South-East Asia",
       "age": 72.63
     },
@@ -343,7 +343,7 @@ const regionData = {
       "region": "Americas",
       "age": 73.21
     },
-    "Saint Vincent and the Grenadines": {
+    "Saint Vincent And The Grenadines": {
       "region": "Americas",
       "age": 73.22
     },
@@ -491,7 +491,7 @@ const regionData = {
       "region": "Eastern Mediterranean",
       "age": 76.08
     },
-    "Trinidad and Tobago": {
+    "Trinidad And Tobago": {
       "region": "Americas",
       "age": 76.13
     },
@@ -503,7 +503,7 @@ const regionData = {
       "region": "Eastern Mediterranean",
       "age": 76.44
     },
-    "Antigua and Barbuda": {
+    "Antigua And Barbuda": {
       "region": "Americas",
       "age": 76.45
     },
@@ -511,7 +511,7 @@ const regionData = {
       "region": "Americas",
       "age": 76.58
     },
-    "Bosnia and Herzegovina": {
+    "Bosnia And Herzegovina": {
       "region": "Europe",
       "age": 76.75
     },
@@ -535,7 +535,7 @@ const regionData = {
       "region": "Eastern Mediterranean",
       "age": 77.17
     },
-    "Iran (Islamic Republic of)": {
+    "Iran": {
       "region": "Eastern Mediterranean",
       "age": 77.35
     },
@@ -571,7 +571,7 @@ const regionData = {
       "region": "Americas",
       "age": 78.45
     },
-    "United States of America": {
+    "United States Of America": {
       "region": "Americas",
       "age": 78.5
     },
@@ -631,7 +631,11 @@ const regionData = {
       "region": "Europe",
       "age": 81.32
     },
-    "United Kingdom of Great Britain and Northern Ireland": {
+    "United Kingdom Of Great Britain And Northern Ireland": {
+      "region": "Europe",
+      "age": 81.4
+    },
+    "England": {
       "region": "Europe",
       "age": 81.4
     },
@@ -719,7 +723,7 @@ const regionData = {
       "region": "Europe",
       "age": 83.22
     },
-    "Republic of Korea": {
+    "Republic Of Korea": {
       "region": "Western Pacific",
       "age": 83.3
     },

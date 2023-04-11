@@ -1,6 +1,25 @@
 const input = document.querySelector('#myInput');
 const datalist = document.querySelector('#data');
 
+// // build country selector field
+// Object.keys(regionData).forEach(key => {
+//   const option = document.createElement('option');
+//   option.value = key;
+//   datalist.appendChild(option);
+// });
+
+// // Check for user input into the country field and give suggestions based on data.js
+// input.addEventListener('input', (event) => {
+//   const value = event.target.value.toLowerCase();
+//   const filteredKeys = Object.keys(regionData).filter(key => key.toLowerCase().startsWith(value));
+//   datalist.innerHTML = '';
+//   filteredKeys.forEach(key => {
+//     const option = document.createElement('option');
+//     option.value = key;
+//     datalist.appendChild(option);
+//   });
+// });
+
 // build country selector field
 Object.keys(regionData).forEach(key => {
   const option = document.createElement('option');
@@ -9,8 +28,7 @@ Object.keys(regionData).forEach(key => {
 });
 
 // Check for user input into the country field and give suggestions based on data.js
-input.addEventListener('input', (event) => {
-  const value = event.target.value.toLowerCase();
+const updateOptions = (value) => {
   const filteredKeys = Object.keys(regionData).filter(key => key.toLowerCase().startsWith(value));
   datalist.innerHTML = '';
   filteredKeys.forEach(key => {
@@ -18,6 +36,16 @@ input.addEventListener('input', (event) => {
     option.value = key;
     datalist.appendChild(option);
   });
+}
+
+input.addEventListener('input', (event) => {
+  const value = event.target.value.toLowerCase();
+  updateOptions(value);
+});
+
+input.addEventListener('touchend', (event) => {
+  const value = event.target.value.toLowerCase();
+  updateOptions(value);
 });
 
 
@@ -27,7 +55,8 @@ function sendInfo() {
   const name = document.getElementById("name").value;
   const age = parseInt(document.getElementById("age").value);
   const addressee = document.getElementById("addressee").value;
-  const country = document.getElementById("myInput").value;
+  const rawCountry = document.getElementById("myInput").value;
+  const country = rawCountry.trim();
   const task = document.getElementById("task").value;
 
   console.log(typeof(age));
@@ -41,14 +70,17 @@ function sendInfo() {
     alert("The age field must be a number.");
     return;
   }  
-  if (regionData[country] == null){
+  // if (regionData[country] == null){
+  //   alert("Region data error: please input a valid country name.");
+  //   return;
+  // }
+  if (!Object.keys(regionData).some(key => key.toLowerCase() === country.toLowerCase())) {
     alert("Region data error: please input a valid country name.");
     return;
   }
-
   // Create the URL with parameters
   const url = `https://callumbeaney.github.io/rejection-letter/result.html?n=${name}&a=${age}&p=${addressee}&c=${country}&t=${task}`;
-  // const url = `file:///Users/---/---/rejection%20letter/result.html?n=${name}&a=${age}&p=${addressee}&c=${country}&t=${task}`;
+  // const url = `file:///Users/----/Developer/rejection%20letter/result.html?n=${name}&a=${age}&p=${addressee}&c=${country}&t=${task}`;
 
   // Redirect to the URL
   window.location.href = url;
